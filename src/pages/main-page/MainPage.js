@@ -1,3 +1,5 @@
+import withAuth from "../../hoc/withAuth"
+
 const MainPage = ()=> {
     return (
         <div>
@@ -6,4 +8,5 @@ const MainPage = ()=> {
         </div>
     )
 }
-export default MainPage;
+
+export default withAuth(MainPage);
