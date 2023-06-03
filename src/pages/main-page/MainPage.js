@@ -1,10 +1,10 @@
 import withAuth from "../../hoc/withAuth"
+import Header from "../../components/header/Header";
 
 const MainPage = ()=> {
     return (
         <div>
-            Это наша главная страница! 
-            Велкам!
+            <Header/>
         </div>
     )
 }

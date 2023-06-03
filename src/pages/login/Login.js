@@ -1,6 +1,7 @@
 import {
     FormWrapper,
     Title,
+    TitleLink
 } from './style'
 
 import {
@@ -14,7 +15,7 @@ import {useForm, Controller} from 'react-hook-form'
 
 import { FetchAuth } from '../../api';
 import { useAuth } from '../../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Login = () => {
     const {control, handleSubmit} = useForm();
@@ -60,6 +61,12 @@ const Login = () => {
                     )}
                 />
             </Form.Item>
+            <TitleLink>
+                <span>Нет аккаунта?</span>       
+                <Link to={'/registration'}>
+                     зарегистрируйся
+                </Link>
+            </TitleLink>
             <Button 
                 block 
                 htmlType='submit' 

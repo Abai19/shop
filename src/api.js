@@ -31,3 +31,20 @@ export const FetchAuth = async (data) => {
         return error
     }
 }
+
+export const FetchUser = async (data) => {
+    try {
+        const request = await fetch(BASE_URL+ API.user+`2/`, {
+            method: "GET",
+            headers: {
+                "Content-type": 'application/json',
+                "Authorization": `Bearer ${data}`
+            },
+        })
+        const response = await request.json()
+        return response
+    } catch (error) {
+        console.log(error)
+        return error
+    }
+}

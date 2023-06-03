@@ -10,3 +10,12 @@ export const FormWrapper = styled.form`
 export const Title = styled.h3`
     text-align: center;
 `
+
+export const TitleLink = styled.p`
+    text-align: right;
+    font-size: 13px;
+    
+    & span {
+        margin-right: 3px;
+    }
+`

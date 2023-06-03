@@ -22,7 +22,6 @@ const withAuth = (Component) => (props)=> {
             <Component {...props}/>
         )
     }
-
     return (
         <Box>
             <Spin size="large" />
