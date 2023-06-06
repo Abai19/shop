@@ -27,6 +27,7 @@ const Login = () => {
         const res = await FetchAuth(data);
         if(res.access){
             login(res.access);
+            localStorage.setItem('login', data.username);
             router('/');
             message.success('Добро пожаловать!')
         }

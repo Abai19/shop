@@ -11,7 +11,7 @@ import Registration from './pages/registration/Registration';
 import MainPage from './pages/main-page/MainPage';
 
 import { AuthProvider } from './context/AuthContext';
-
+import Profile from './pages/profile/Profile';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +29,10 @@ const router = createBrowserRouter([
         path: '/registration',
         element: <Registration/>
       },
+      {
+        path: '/profile',
+        element: <Profile/>
+      }
     ]
   },
   {
